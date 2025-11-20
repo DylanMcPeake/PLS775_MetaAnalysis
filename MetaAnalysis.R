@@ -27,6 +27,9 @@ influenceResults_Liu
 mod.wetlandTypeq_Liu <- rma(yi, vi, mods = ~Wetland_Comparison-1, data=df_Liu)
 mod.wetlandTypeq_Liu
 
+mod.wetlandTypeq_Liu_Int <- rma(yi, vi, mods = ~Wetland_Comparison, data=df_Liu)
+mod.wetlandTypeq_Liu_Int
+
 # random effect structure
 # mod.RESq <- rma.mv(yi, vi, random = ~1|Author, data=df)
 # mod.RESq
@@ -56,6 +59,9 @@ influenceResults_noLiu
 # moderator test
 mod.wetlandTypeq_noLiu <- rma(yi, vi, mods = ~Wetland_Comparison-1, data=df_noLiu)
 mod.wetlandTypeq_noLiu
+
+mod.wetlandTypeq_noLiu_Int <- rma(yi, vi, mods = ~Wetland_Comparison, data=df_noLiu)
+mod.wetlandTypeq_noLiu_Int
 
 # random effect structure
 # mod.RESq <- rma.mv(yi, vi, random = ~1|Author, data=df)
